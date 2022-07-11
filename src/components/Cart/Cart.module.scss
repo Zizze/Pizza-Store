@@ -1,0 +1,15 @@
+.cart__item {
+	display: block;
+	padding: 0;
+}
+
+.cart__top {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+
+	@media (max-width: 436px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}

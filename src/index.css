@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300;400;500;600;700&display=swap");
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pagination {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.pagination ul {
+	display: flex;
+	font-size: 17px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.pagination li a {
+	display: block;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 7px;
+	line-height: 15px;
+}
+.pagination li {
+	border-radius: 20px;
+}
+.pagination li:not(:last-child) {
+	margin-right: 5px;
+}
+
+.pagination li:not(:last-child):not(:first-child) {
+	border: solid orange 2px;
+	border-radius: 50%;
+}
+
+.pagination li:hover {
+	background-color: orange;
+	color: aliceblue;
+}
+
+.pagination a:hover {
+	color: aliceblue;
+}
+
+.pagination .selected a {
+	background-color: orange;
+	color: aliceblue;
+}
+
+.cart__bottom {
+	padding: 50px 0;
+}
+
+@media (max-width: 369px) {
+	.pagination {
+		width: 240px;
+		margin: 0 auto;
+	}
+
+	.pagination li a {
+		font-size: 15px;
+		padding: 5px;
+		line-height: 15px;
+	}
+}
