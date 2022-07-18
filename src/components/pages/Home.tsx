@@ -44,7 +44,6 @@ const HomePage: React.FC = () => {
 				{(items.length > 3 || page === 2) && search === "" && status === "success" && (
 					<PaginatedItems itemsPerPage={4} forcePage={page} />
 				)}
-				{status === "loading" && <Skeleton />}
 			</div>
 		</div>
 	);
