@@ -22,6 +22,7 @@ const Sort = () => {
 		setclickIndex(index);
 		setSortActive(sortTitle[index].name);
 		dispatch(newSortParams(sortTitle[index]));
+		setIsOpen(false);
 	};
 
 	document.body.addEventListener("click", (e: MouseEvent) => {
